@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import "tailwindcss/tailwind.css";
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
   return <Component {...pageProps} />
 }
 

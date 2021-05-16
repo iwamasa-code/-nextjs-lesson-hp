@@ -4,7 +4,7 @@ import Link from "next/link";
 import Layout from "../../components/Layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 
-export default function Post({ post }) {
+const Post = ({ post }) => {
   if (!post) {
     return <div>Loading...</div>;
   }
@@ -56,3 +56,5 @@ export async function getStaticProps({ params }) {
     },
   };
 }
+
+export default Post
